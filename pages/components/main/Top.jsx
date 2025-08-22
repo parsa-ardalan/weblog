@@ -7,7 +7,7 @@ export default function Top() {
 
     return (
 
-        <div className="grid grid-cols-3 gap-3 w-full h-2/6">
+        <div className="grid grid-cols-3 gap-3 w-full h-2/6 pr-3">
 
 
             {/* right part */}
