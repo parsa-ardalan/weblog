@@ -7,14 +7,14 @@ export default function Top() {
 
     return (
 
-        <div className="grid grid-cols-3 gap-3 w-full h-2/6 border">
+        <div className="grid grid-cols-3 gap-3 w-full h-2/6">
 
 
             {/* right part */}
 
             <div className="col-span-1 flex items-center justify-center">
 
-                <Image width={100} height={100} src={profile} className="rounded-full px-2 py-2" id="profile-picture" />
+                <Image width={100} height={100} src={profile} className="rounded-full px-2 py-2" id="profile-picture" alt="profile" />
 
             </div>
 
