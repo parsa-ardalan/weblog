@@ -20,7 +20,12 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+
+  background-image: url("../public/images/backgrounds/background3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: content-box;
   font-family: Arial, Helvetica, sans-serif;
 }
