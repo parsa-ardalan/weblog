@@ -36,7 +36,7 @@ export default function Top() {
 
                 <div className=" w-full h-1/2">
 
-                    <h2 className="text-md text-black text-shadow-xs text-shadow-black/50"> {bio.personalInfo.jobTitle} </h2>
+                    <h2 className="text-sm text-black text-shadow-xs text-shadow-black/50"> {bio.personalInfo.jobTitle} </h2>
 
                 </div>
 
