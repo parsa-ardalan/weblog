@@ -1,0 +1,26 @@
+{
+    "personalInfo": {
+        "firstName": "پارسا",
+        "lastName": "اردلان",
+        "jobTitle": "برنامه نویس ارشد front-end",
+        "age": 19,
+        "page": "about me / home"
+    },
+    "skillsAndExperience": {
+        "certificate": "CS50x از Harvard University",
+        "workExperienceYears": 3,
+        "frontEndLanguage": "HTML",
+        "styleLanguages": [
+            "CSS",
+            "SCSS",
+            "Sass"
+        ],
+        "programmingLanguage": "JavaScript",
+        "framework": "Next.js",
+        "library": "React.js",
+        "stateManagement": "Redux",
+        "stylingTool": "Tailwind CSS",
+        "profession": "",
+        "page": "skills / resume"
+    }
+}
