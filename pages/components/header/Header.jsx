@@ -6,19 +6,20 @@ export default function Header() {
         {
             id: 0,
             name: "درباره من",
-            address: "#",
+            address: "/"
         },
         {
             id: 1,
             name: "مهارت / سوابق",
-            address: "#",
+            address: "/resume"
         },
         {
             id: 2,
             name: "نمونه کارها",
-            address: "#",
+            address: "/templates"
         },
     ]
+
 
     return (
 
