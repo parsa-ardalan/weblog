@@ -22,7 +22,7 @@ export default function Header() {
 
     return (
 
-        <div className="grid grid-cols-3 gap-3 w-11/12 h-10">
+        <div className="grid grid-cols-3 gap-3 w-11/12 mx-auto h-16 bg-black/40 rounded-xl">
 
 
             {pages.map((page) => (

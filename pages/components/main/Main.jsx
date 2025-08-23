@@ -6,7 +6,7 @@ export default function Main() {
 
     return (
 
-        <div className="container mx-auto bg-white/10 backdrop-blur-xs border border-white rounded-xl w-3/4 h-3/5 mt-52">
+        <div className="container mx-auto bg-black-10 backdrop-blur-xs border border-white rounded-xl w-3/4 h-3/5 mt-36">
 
             <Top />
 
