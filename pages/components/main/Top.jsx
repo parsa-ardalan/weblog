@@ -26,7 +26,7 @@ export default function Top() {
                 {/* name  */}
                 <div className="w-full h-1/2 flex items-end justify-right">
 
-                    <h1 className="text-2xl text-black text-shadow-xs text-shadow-black/50">
+                    <h1 className="text-2xl text-white text-shadow-sm text-shadow-black">
                         {bio.personalInfo.firstName + " " + bio.personalInfo.lastName}
                     </h1>
 
@@ -34,9 +34,9 @@ export default function Top() {
 
                 {/* nickname */}
 
-                <div className=" w-full h-1/2">
+                    <div className=" w-full h-1/2">
 
-                    <h2 className="text-sm text-black text-shadow-xs text-shadow-black/50"> {bio.personalInfo.jobTitle} </h2>
+                    <h2 className="text-sm text-white text-shadow-sm text-shadow-black"> {bio.personalInfo.jobTitle} </h2>
 
                 </div>
 

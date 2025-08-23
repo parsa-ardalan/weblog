@@ -4,9 +4,9 @@ export default function Middle() {
 
         <div className="w-full h-3/6">
 
-            <p dir="rtl" className="px-6 text-xs text-black text-shadow-xs text-shadow-black/50">
+            <p dir="rtl" className="px-6 text-sm text-white/70 text-shadow-sm text-shadow-black">
 
-                برنامه نویس ارشد JavaScript وبسایت front-end.
+                برنامه نویس ارشد وبسایت front-end.
 
                 <br />
                 طراحی سایت با بروزترین ابزار و چیدمان جهانی.
