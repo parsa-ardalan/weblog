@@ -18,9 +18,6 @@ export default function Skills() {
 
                 <br />
                 - مسلط به Rest PI
-
-                <br />
-                - طراحی دیزاین مدرن و مسلط به مبانی UI / UX
             </p>
         </div>
     )
