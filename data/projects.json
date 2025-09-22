@@ -1,0 +1,38 @@
+[
+    {
+        "name": "online FastFood",
+        "github": "https://github.com/parsa-ardalan/fastFood-website.git",
+        "photo": "/images/projects/fastFood/main.jpg",
+        "photo1": "/images/projects/fastFood/home.jpg",
+        "photo2": "/images/projects/fastFood/menu.jpg",
+        "photo3": "/images/projects/fastFood/pizza.jpg",
+        "photo4": "/images/projects/fastFood/burgers.jpg"
+    },
+    {
+        "name": "cart",
+        "github": "https://github.com/parsa-ardalan/cart.git",
+        "photo": "/images/projects/cart/main.jpg",
+        "photo1": "/images/projects/cart/home.jpg",
+        "photo2": "/images/projects/cart/items.jpg",
+        "photo3": "/images/projects/cart/item.jpg",
+        "photo4": "/images/projects/cart/cart.jpg"
+    },
+    {
+        "name": "cafe menu v1",
+        "github": "https://github.com/parsa-ardalan/cafe-menu-v1.git",
+        "photo": "/images/projects/menu-v1/main.jpg",
+        "photo1": "/images/projects/menu-v1/home.jpg",
+        "photo2": "/images/projects/menu-v1/cakes.jpg",
+        "photo3": "/images/projects/menu-v1/juice.jpg",
+        "photo4": "/images/projects/menu-v1/coffee.jpg"
+    },
+    {
+        "name": "cafe menu v2",
+        "github": "https://github.com/parsa-ardalan/cafe-menu-v2.git",
+        "photo": "/images/projects/menu-v2/main.jpg",
+        "photo1": "/images/projects/menu-v2/home.jpg",
+        "photo2": "/images/projects/menu-v2/cakes.jpg",
+        "photo3": "/images/projects/menu-v2/hot.jpg",
+        "photo4": "/images/projects/menu-v2/cold.jpg"
+    }
+]
