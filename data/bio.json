@@ -1,8 +1,7 @@
 {
     "personalInfo": {
-        "firstName": "پارسا",
-        "lastName": "اردلان",
-        "jobTitle": "برنامه نویس ارشد front-end",
+        "name": "پارسا اردلان",
+        "jobTitle": "برنامه نویس front-end",
         "age": 19,
         "page": "about me / home"
     },

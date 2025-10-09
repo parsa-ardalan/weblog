@@ -1,6 +1,6 @@
 import Header from "../components/header/Header";
-import Skills from "../components/resume/Skills";
-import Tools from "../components/resume/Tools";
+import Skills from "../components/skills/Skills";
+import Tools from "../components/skills/Tools";
 
 export default function Resume() {
 
