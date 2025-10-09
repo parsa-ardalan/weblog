@@ -15,7 +15,7 @@ export default function Profile() {
 
             <h1 className="text-lg text-white/70 text-center text-shadow-sm text-shadow-black mt-4"> {data.personalInfo.name} </h1>
             <h2 className="text-md text-white/70 text-center text-shadow-sm text-shadow-black mt-2"> {data.personalInfo.jobTitle} </h2>
-
+            
         </div>
     )
 }
