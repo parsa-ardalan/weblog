@@ -21,7 +21,9 @@ export default function Home() {
 
     <div className="w-screen h-screen pt-10 px-3" dir="rtl">
 
-      <div className="flex w-full h-1/2">
+      <Header/>
+
+      <div className="flex w-full h-1/2 mt-10">
 
         <Profile />
 
