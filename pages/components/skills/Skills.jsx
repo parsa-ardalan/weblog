@@ -12,7 +12,7 @@ export default function Skills() {
     return (
 
 
-        <div className="grid grid-cols-3 gap-2 w-1/2 h-full pr-2 py-1">
+        <div className="grid grid-cols-3 gap-2 w-1/2 h-full pr-2">
 
             {
                 skills.map((item) =>
