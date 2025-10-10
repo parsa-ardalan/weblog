@@ -6,7 +6,7 @@ export default function Profile() {
 
     return (
 
-        < div className="w-1/2 h-full bg-white/20 pt-8 rounded-xl" >
+        < div className="w-1/2 h-full bg-white/20 pt-8 rounded-xl backdrop-blur-xs" >
 
             {/* profile photo */}
             <div className="h-auto w-full flex items-center justify-center">
