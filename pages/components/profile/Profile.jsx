@@ -19,8 +19,16 @@ export default function Profile() {
 
             <hr className="text-white/70 w-4/5 mx-auto mt-5" />
 
-            <div className="flex items-center w-full h-1/4 pr-5">
-                <Link href={"3"} className="text-lg text-green-700/70 text-shadow-sm text-shadow-black/60"> مشاهد رزومه... </Link>
+            <div className="grid grid-cols-2 w-full h-1/4 px-5 opacity-50">
+
+                <div className="col-span-1 flex items-center justify-center">
+                    <Image src={"/icons/linkedIn.png"} alt="linkedIn" width={35} height={35} />
+                </div>
+
+                <div className="col-span-1 flex items-center justify-center">
+                    <Image src={"/icons/github.png"} alt="github" width={35} height={35} />
+                </div>
+
             </div>
 
         </div>
