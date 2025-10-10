@@ -19,9 +19,9 @@ export default function Profile() {
 
             <hr className="text-white/70 w-4/5 mx-auto mt-5" />
 
-            <p className="text-xs text-white/70 text-right text-shadow-sm text-shadow-black mt-2 pr-5"> 
-                دارای مدرک تخصصی برنامه نویسی از دانشگاه عالی رتبه هاروارد.
-            </p>
+            <div className="flex items-center w-full h-1/4 pr-5">
+                <Link href={"3"} className="text-lg text-green-700/70 text-shadow-sm text-shadow-black/60"> مشاهد رزومه... </Link>
+            </div>
 
         </div>
     )
