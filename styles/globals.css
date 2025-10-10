@@ -59,3 +59,7 @@ h1 , h2 , h3 , p , span {
   font-family: "Arial";
   user-select: none;
 }
+
+.slow {
+  animation-duration: 15s;
+}

@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
 
-    <div className="w-screen h-screen pt-10 px-3" dir="rtl">
+    <div className="w-screen h-screen pt-10 px-5" dir="rtl">
 
       <Header/>
 
