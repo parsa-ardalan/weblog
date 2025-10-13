@@ -1,6 +1,6 @@
 [
     {
-        "name": "fastFood",
+        "name": "فست فود آنلاین",
         "github": "https://github.com/parsa-ardalan/fastFood-website.git",
         "photo": "/images/projects/fastFood/main.jpg",
         "photo1": "/images/projects/fastFood/home.jpg",
@@ -9,7 +9,7 @@
         "photo4": "/images/projects/fastFood/burgers.jpg"
     },
     {
-        "name": "cart",
+        "name": "سبد خرید",
         "github": "https://github.com/parsa-ardalan/cart.git",
         "photo": "/images/projects/cart/main.jpg",
         "photo1": "/images/projects/cart/home.jpg",
@@ -18,7 +18,7 @@
         "photo4": "/images/projects/cart/cart.jpg"
     },
     {
-        "name": "cafe menu v1",
+        "name": "منوی آنلاین کافه",
         "github": "https://github.com/parsa-ardalan/cafe-menu-v1.git",
         "photo": "/images/projects/menu-v1/main.jpg",
         "photo1": "/images/projects/menu-v1/home.jpg",
@@ -27,7 +27,7 @@
         "photo4": "/images/projects/menu-v1/coffee.jpg"
     },
     {
-        "name": "cafe menu v2",
+        "name": "منوی آنلاین کافه 2",
         "github": "https://github.com/parsa-ardalan/cafe-menu-v2.git",
         "photo": "/images/projects/menu-v2/main.jpg",
         "photo1": "/images/projects/menu-v2/home.jpg",
