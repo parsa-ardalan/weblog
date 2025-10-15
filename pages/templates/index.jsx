@@ -1,4 +1,5 @@
 import Header from "../components/header/Header";
+import Projects from "../components/projects/Projects";
 import RecentProjects from "../components/recent-projects/Projects";
 
 export default function templates() {
@@ -13,6 +14,11 @@ export default function templates() {
                 <h1 className="text-2xl text-white/70 text-shadow-sm text-shadow-black"> جدیدترین پروژه ها </h1>
 
                 <RecentProjects />
+            </div>
+
+            <div className="w-full h-1/4">
+
+                <Projects />
             </div>
 
         </div>
