@@ -17,7 +17,7 @@ export default function Profile() {
             <h1 className="text-xl text-white/70 text-center text-shadow-sm text-shadow-black mt-4"> {data.personalInfo.name} </h1>
             <h2 className="text-sm text-white/70 text-center text-shadow-sm text-shadow-black mt-2"> {data.personalInfo.jobTitle} </h2>
 
-            <hr className="text-white/70 w-4/5 mx-auto mt-5" />
+            <hr className="text-white/70 w-4/5 mx-auto mt-5 text-shadow-sm text-shadow-black" />
 
             <div className="grid grid-cols-2 w-full h-1/4 px-5 opacity-50">
 

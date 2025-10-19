@@ -54,7 +54,11 @@ body {
 
 /* text and fonts */
 
-h1 , h2 , h3 , p , span {
+h1,
+h2,
+h3,
+p,
+span {
 
   font-family: "Arial";
   user-select: none;
@@ -62,4 +66,10 @@ h1 , h2 , h3 , p , span {
 
 .slow {
   animation-duration: 15s;
+}
+
+.project-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

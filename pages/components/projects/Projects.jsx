@@ -3,9 +3,9 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 
 import projects from "@/data/projects.json"
+import Link from 'next/link';
 
 export default function Projects() {
     return (
@@ -23,7 +23,8 @@ export default function Projects() {
                 {
                     projects.map((project) => (
 
-                        <SwiperSlide className=' bg-white/20 rounded-t-xl'
+                        <SwiperSlide
+                            className=' bg-white/20 rounded-t-xl'
                             style={{
                                 backgroundImage: `url(${project.photo1})`,
                                 backgroundSize: "cover",
@@ -57,8 +58,20 @@ export default function Projects() {
 
 
                                 {/* bottom part: darker and green link */}
-                                <div className="flex items-center justify-center h-1/3 w-full bg-black/60 rounded-t-lg">
-                                    <h1 className='text-md text-green-700 text-shadow-sm text-shadow-black/40'> مشاهده پروژه </h1>
+                                <div className="flex items-center justify-center h-1/3 w-full bg-black/40 rounded-t-lg">
+
+                                    <Link className='text-md text-green-700 text-shadow-sm text-shadow-black/40'
+
+                                        href={{
+                                            pathname: `/project/${project.name}`,
+                                            query: {
+                                                pname: project.name,
+                                                photos: [project.photo1, project.photo2, project.photo3 , project.photo4],
+                                                link: project.github
+                                            }
+                                        }}
+                                    > مشاهده پروژه </Link>
+
                                 </div>
 
                             </div>

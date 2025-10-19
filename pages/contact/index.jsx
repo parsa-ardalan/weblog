@@ -1,8 +1,6 @@
 import Header from "../components/header/Header";
 import PhoneNumber from "../components/phonenumbers/PhoneNumbers";
 import Platforms from "../components/platforms/Platforms";
-import Steps from "../components/steps/Steps";
-
 
 export default function Contact() {
 
