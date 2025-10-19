@@ -1,6 +1,7 @@
 import { useRouter } from "next/router"
 import Header from "../components/header/Header";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Project() {
 
@@ -11,7 +12,8 @@ export default function Project() {
 
         name: router.query.pname,
         photos: router.query.photos,
-        github: router.query.link
+        github: router.query.link,
+        info: router.query.info
     }
 
     const projectPhotos = project.photos;
@@ -20,49 +22,40 @@ export default function Project() {
 
     console.log(projectPhotos);
 
-
     return (
 
         <div className="w-screen h-screen pt-10 px-5" dir="rtl">
 
             <Header />
 
-            {/* top part: including name, info and photos */}
-            <div className="grid grid-cols-2 w-full h-1/2 mt-10 px-5 bg-white/20 rounded-t-xl backdrop-blur-xs">
+            {/* name and info */}
+            <div className="col-span-2 rounded-t-xl backdrop-blur-xs h-auto py-3 px-3 bg-white/20 mt-10">
 
-                {/* name and info */}
-                <div className="col-span-2 h-auto pt-10">
+                <h1 className="text-xl text-white/70 text-shadow-sm text-shadow-black"> {project.name} </h1>
 
-                    <h1 className="text-xl text-white/70 text-shadow-sm text-shadow-black"> {project.name} </h1>
-
-                    <p className="text-sm text-shadow-sm text-white/70 text-shadow-black w-3/4 h-auto pr-1 mt-2" dir="rtl">
-                        Lorem ipsum dolor sit amet it le consectetur adipisicing
-                    </p>
-
-                </div>
-
-
-                {/* photos of the project */}
-
-                <div className="col-span-2 grid grid-cols-4 gap-3 pb-3">
-
-                    {
-                        projectPhotos.map((photo) => (
-
-                            <div className="project-image col-span-1 bg-white/20 border rounded-sm"
-                                key={photo} style={{ backgroundImage: `url(${photo})` }}>
-
-                            </div>
-                        ))
-                    }
-
-                </div>
-
-
+                <p className="text-sm text-shadow-sm text-white/70 text-shadow-black w-3/4 h-auto pr-1 mt-2" dir="rtl">
+                    {project.info}
+                </p>
 
             </div>
 
-            {/* bottom part: including github link and copy button */}
+
+            {/* photos of the project */}
+            <div className="h-1/5 mt-1 grid grid-cols-4 gap-3 px-3 py-3 bg-white/20 backdrop-blur-xs">
+
+                {
+                    projectPhotos.map((photo) => (
+
+                        <div className="project-image col-span-1 bg-white/20 shadow-md shadow-black rounded-sm"
+                            key={photo} style={{ backgroundImage: `url(${photo})` }}>
+
+                        </div>
+                    ))
+                }
+
+            </div>
+
+
             <div className="flex w-full h-1/10 bg-white/20 mt-1 rounded-b-xl px-5 backdrop-blur-xs">
 
                 <div className="flex items-center justify-center w-1/2 h-full">
@@ -83,5 +76,7 @@ export default function Project() {
             </div>
 
         </div>
+
+
     )
 }

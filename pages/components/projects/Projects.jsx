@@ -67,7 +67,8 @@ export default function Projects() {
                                             query: {
                                                 pname: project.name,
                                                 photos: [project.photo1, project.photo2, project.photo3 , project.photo4],
-                                                link: project.github
+                                                link: project.github,
+                                                info: project.info
                                             }
                                         }}
                                     > مشاهده پروژه </Link>
