@@ -8,6 +8,30 @@ import projects from "@/data/projects.json"
 import Link from 'next/link';
 
 export default function Projects() {
+
+    const copy = (index) => {
+
+        const url = `${window.location.origin}/project/${index.name}`;
+        navigator.clipboard.writeText(url);
+    }
+
+    const share = () => {
+
+        if (navigator.share) {
+
+            navigator.share({
+
+                title: "project shares to...",
+                text: "you are sharing the project with someone you'd choose.",
+                url: location.href
+            })
+                .then(() => console.log("share tab opened"))
+                .catch((error) => console.log("Error sharing:", error));
+        } else {
+            console.log("browser doesn't support this option")
+        }
+    };
+
     return (
 
         <>
@@ -40,14 +64,16 @@ export default function Projects() {
                                     {/* top part: icons */}
                                     <div className="flex w-full text-white/70 h-1/2 px-3">
 
+                                        {/* share icon */}
                                         <div className="w-1/2 h-full flex items-center justify-start">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4" onClick={share}>
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
                                             </svg>
                                         </div>
 
+                                        {/* copy icon */}
                                         <div className="w-1/2 h-full flex items-center justify-end">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4" onClick={() => { copy(project) }}>
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h2.25m8.25-8.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-7.5A2.25 2.25 0 0 1 8.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 0 0-2.25 2.25v6" />
                                             </svg>
                                         </div>
@@ -66,7 +92,7 @@ export default function Projects() {
                                             pathname: `/project/${project.name}`,
                                             query: {
                                                 pname: project.name,
-                                                photos: [project.photo1, project.photo2, project.photo3 , project.photo4],
+                                                photos: [project.photo1, project.photo2, project.photo3, project.photo4],
                                                 link: project.github,
                                                 info: project.info
                                             }

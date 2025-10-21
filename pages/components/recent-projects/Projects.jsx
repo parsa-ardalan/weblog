@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import Link from 'next/link';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -36,18 +37,31 @@ export default function RecentProjects() {
 
                     <SwiperSlide className='w-full h-full'>
 
-                        <div className='text-center text-white w-full h-full bg-white/20 backdrop-blur-xs rounded-xl' dir='ltr'>
+                        <div className='text-center w-full h-full bg-white/20 backdrop-blur-xs rounded-xl' dir='ltr'>
 
                             <div className="h-1/2 w-full flex items-center justify-end px-5">
                                 <h1 className='text-white/70 text-shadow-sm text-shadow-black text-xl'> {project.name} </h1>
                             </div>
 
-                            <hr className='flex text-white/70 w-4/5 mx-auto' />
-
+                            <hr className='text-white/50 w-5/6 h-1 mx-auto' /> 
+                            
                             <div className="h-1/2 w-full flex">
 
                                 <div className="h-full w-1/2 flex items-center justify-end pl-5" dir='rtl'>
-                                    <h1 className='text-lg text-green-700 text-shadow-sm text-shadow-black/40'> مشاهده پروژه </h1>
+
+                                    <Link className='text-md text-green-700 text-shadow-sm text-shadow-black/40'
+
+                                        href={{
+                                            pathname: `/project/${project.name}`,
+                                            query: {
+                                                pname: project.name,
+                                                photos: [project.photo1, project.photo2, project.photo3, project.photo4],
+                                                link: project.github,
+                                                info: project.info
+                                            }
+                                        }}
+                                    > مشاهده پروژه </Link>
+
                                 </div>
 
                                 {/* photos */}

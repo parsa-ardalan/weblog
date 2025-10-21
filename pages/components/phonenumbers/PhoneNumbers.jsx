@@ -1,5 +1,7 @@
 export default function PhoneNumber() {
 
+    const phonenumber = ["+98 937 563 2332", "+98 996 092 5093"]
+
     return (
 
         <div className="flex w-full h-16 mt-6">
@@ -8,14 +10,14 @@ export default function PhoneNumber() {
             <div className="w-3/4 h-full" dir="ltr">
 
                 <div className="w-full h-1/2 flex items-center justify-start">
-                <h1 className="text-md text-white/70 text-shadow-sm text-shadow-black" dir="ltr"> +98 937 563 2332 </h1>
+                    <a href={`tel:${phonenumber[0]}`} className="text-md text-white/70 text-shadow-sm text-shadow-black" dir="ltr"> {phonenumber[0]}  </a>
                 </div>
 
                 <div className="w-full h-1/2 flex items-center justify-start">
-                <h1 className="text-md text-white/70 text-shadow-sm text-shadow-black" dir="ltr"> +98 996 092 5093 </h1>
+                    <a href={`tel:${phonenumber[1]}`} className="text-md text-white/70 text-shadow-sm text-shadow-black" dir="ltr"> {phonenumber[1]}  </a>
                 </div>
 
-           </div>
+            </div>
 
             {/* phonenumber logo */}
             <div className="w-1/4 h-full flex items-center justify-center">
