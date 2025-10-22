@@ -1,18 +1,20 @@
 import React, { useRef, useState } from 'react';
+import Link from 'next/link';
 
+// swiper import files
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 import projects from "@/data/projects.json"
-import Link from 'next/link';
 
+// notyf library
 import { Notyf } from "notyf";
 import "notyf/notyf.min.css";
 
-
 export default function Projects() {
 
+    // copy fonction
     const copy = (index) => {
 
         const url = `${window.location.origin}/project/${index.name}`;
@@ -23,6 +25,7 @@ export default function Projects() {
         notyf.success("copied")
     }
 
+    // share tab opening function
     const share = () => {
 
         if (navigator.share) {
@@ -89,7 +92,6 @@ export default function Projects() {
 
                                     <h1 className='text-center text-sm text-white/70 text-shadow text-shadow-sm text-shadow-black mt-3'> {project.name} </h1>
                                 </div>
-
 
                                 {/* bottom part: darker and green link */}
                                 <div className="flex items-center justify-center h-1/3 w-full bg-black/40 rounded-t-lg">
