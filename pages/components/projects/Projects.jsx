@@ -7,12 +7,20 @@ import 'swiper/css/pagination';
 import projects from "@/data/projects.json"
 import Link from 'next/link';
 
+import { Notyf } from "notyf";
+import "notyf/notyf.min.css";
+
+
 export default function Projects() {
 
     const copy = (index) => {
 
         const url = `${window.location.origin}/project/${index.name}`;
         navigator.clipboard.writeText(url);
+
+        const notyf = new Notyf();
+
+        notyf.success("error accured")
     }
 
     const share = () => {
@@ -56,7 +64,7 @@ export default function Projects() {
                             }}>
 
                             {/* container div */}
-                            <div className='w-full h-full bg-black/40 backdrop-blur-xs rounded-t-xl'>
+                            <div className='w-full h-full bg-black/50 backdrop-blur-xs rounded-t-xl'>
 
                                 {/* top part: including name and icons */}
                                 <div className="h-2/3 w-full">
@@ -86,7 +94,7 @@ export default function Projects() {
                                 {/* bottom part: darker and green link */}
                                 <div className="flex items-center justify-center h-1/3 w-full bg-black/40 rounded-t-lg">
 
-                                    <Link className='text-md text-green-700 text-shadow-sm text-shadow-black/40'
+                                    <Link className='text-sm text-green-700 text-shadow-sm text-shadow-black/40'
 
                                         href={{
                                             pathname: `/project/${project.name}`,
