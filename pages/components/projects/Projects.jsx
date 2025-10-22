@@ -20,7 +20,7 @@ export default function Projects() {
 
         const notyf = new Notyf();
 
-        notyf.success("error accured")
+        notyf.success("copied")
     }
 
     const share = () => {

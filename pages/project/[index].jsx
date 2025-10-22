@@ -3,6 +3,9 @@ import Header from "../components/header/Header";
 import Image from "next/image";
 import { useState } from "react";
 
+import { Notyf } from "notyf";
+import "notyf/notyf.min.css";
+
 export default function Project() {
 
     // get data from router
@@ -27,6 +30,10 @@ export default function Project() {
 
         navigator.clipboard.writeText(index.github)
         console.log(index.github + " copied to clipboard;");
+
+        const notyf = new Notyf();
+
+        notyf.success("copied")
 
     }
 
