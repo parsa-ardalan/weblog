@@ -6,7 +6,7 @@ export default function Contact() {
 
     return (
 
-        <div className="w-screen h-screen pt-10 px-5" dir="rtl">
+        <div className="w-screen h-screen pt-10 px-5 md:px-20" dir="rtl">
 
             <Header />
 
@@ -14,7 +14,7 @@ export default function Contact() {
 
                 <h1 className="text-2xl text-white/70 text-shadow-sm text-shadow-black"> ارتباط با ما</h1>
 
-                <p className="text-sm text-white/70 text-shadow-sm text-shadow-black mt-2">
+                <p className="text-sm text-white/70 text-shadow-sm text-shadow-black mt-2 md:text-lg">
                     از طریق راه های ارتباطی زیر با ما در تماس باشید.
                 </p>
 

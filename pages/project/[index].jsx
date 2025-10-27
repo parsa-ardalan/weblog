@@ -52,58 +52,70 @@ export default function Project() {
 
     return (
 
-        <div className="w-screen h-screen pt-10 px-5" dir="rtl">
+        <div className="w-screen h-screen pt-10 px-5 md:px-20" dir="rtl">
 
             <Header />
 
             {/* name and info */}
-            <div className="col-span-2 rounded-t-xl backdrop-blur-xs h-auto py-3 px-3 bg-white/20 mt-10">
+            <div className="rounded-t-xl backdrop-blur-xs h-auto py-3 px-3 bg-white/20 mt-10 md:mt-5">
 
-                <h1 className="text-xl text-white/70 text-shadow-sm text-shadow-black"> {project.name} </h1>
+                <h1 className="text-xl text-white/70 text-shadow-sm text-shadow-black md:text-2xl"> {project.name} </h1>
 
-                <p className="text-sm text-shadow-sm text-white/70 text-shadow-black w-3/4 h-auto pr-1 mt-2" dir="rtl">
+                <p className="text-sm text-shadow-sm text-white/70 text-shadow-black w-3/4 h-auto pr-1 mt-2 md:text-lg" dir="rtl">
                     {project.info}
                 </p>
 
             </div>
 
 
-            {/* photos of the project */}
-            <div className="h-1/5 mt-1 grid grid-cols-4 gap-3 px-3 py-3 bg-white/20 backdrop-blur-xs">
+            {/* photos and info */}
+            <div className="w-full h-1/4 mt-1 backdrop-blur-xs flex md:gap-1 md:h-2/4">
 
-                {
-                    projectPhotos.map((photo) => (
+                {/* photos of the project */}
+                <div className="h-full w-full grid grid-cols-4 gap-3 px-3 py-3 bg-white/20 backdrop-blur-xs md:h-full md:w-2/4">
 
-                        <div className="project-image col-span-1 bg-white/20 shadow-md shadow-black rounded-sm"
-                            key={photo} style={{ backgroundImage: `url(${photo})` }}>
+                    {
+                        projectPhotos.map((photo) => (
 
-                        </div>
-                    ))
-                }
+                            <div className="project-image col-span-1 bg-white/20 shadow-md shadow-black rounded-sm"
+                                key={photo} style={{ backgroundImage: `url(${photo})` }}>
+
+                            </div>
+                        ))
+                    }
+
+                </div>
+
+                {/* info: github link in md screen and... */}
+                <div className="hidden h-full w-full px-3 py-3 bg-white/20 backdrop-blur-xs md:block md:h-full md:w-2/4">
+
+                </div>
 
             </div>
 
 
-            {/* bottom div: github */}
-            <div className="flex w-full h-1/10 bg-white/20 mt-1 rounded-b-xl px-5 backdrop-blur-xs">
+            {/* // bottom div: github */}
 
-                {/* copy icon */}
-                <div className="flex items-center justify-center w-1/2 h-full">
+            <div className="flex w-full h-1/10 bg-white/20 mt-1 rounded-b-xl px-5 backdrop-blur-xs" dir="ltr">
 
-                    {copy}
-
-                </div>
 
                 {/* github icon and link */}
-                <div className="flex items-center justify-start w-1/2 h-full" dir="ltr">
+                <div className="flex items-center justify-start w-1/2 h-full md:w-1/3" dir="ltr">
 
                     <Image src={"/icons/github.png"} alt="github" width={35} height={35} className="opacity-60" />
 
                     <a href={project.github} className="text-sm text-shadow-sm text-shadow-black text-white/70 ml-3"> https://github.com </a>
                 </div>
 
+                {/* copy icon */}
+                <div className="flex items-center justify-center w-1/2 h-full md:w-1/6 md:justify-start">
+
+                    {copy}
+
+                </div>
+
             </div>
 
-        </div>
+        </div >
     )
 }

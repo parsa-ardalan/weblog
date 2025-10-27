@@ -11,7 +11,7 @@ export default function Platforms() {
 
     return (
 
-        <div className="grid grid-cols-4 gap-3 px-3 w-full h-auto mt-3">
+        <div className="grid grid-cols-4 gap-3 px-3 w-full h-auto mt-3 md:w-1/2 md:pl-20 md:mt-5">
 
             {
                 platforms.map((item) => (

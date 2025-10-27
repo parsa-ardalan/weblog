@@ -10,7 +10,7 @@ export default function Tools() {
 
     return (
 
-        <div className="grid grid-cols-3 h-1/5 w-full gap-2 py-2" dir="ltr">
+        <div className="grid grid-cols-3 h-1/5 w-full gap-2 py-2 md:px-2 md:w-1/4 md:h-auto md:py-0" dir="ltr">
 
             {
                 tools.map((item) => (

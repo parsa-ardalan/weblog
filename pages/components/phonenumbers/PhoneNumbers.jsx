@@ -4,17 +4,17 @@ export default function PhoneNumber() {
 
     return (
 
-        <div className="flex w-full h-16 mt-6">
+        <div className="flex w-full h-16 mt-6 md:w-1/2 md:pl-20 md:mt-10">
 
             {/* phone numbers */}
             <div className="w-3/4 h-full" dir="ltr">
 
                 <div className="w-full h-1/2 flex items-center justify-start">
-                    <a href={`tel:${phonenumber[0]}`} className="text-md text-white/70 text-shadow-sm text-shadow-black" dir="ltr"> {phonenumber[0]}  </a>
+                    <a href={`tel:${phonenumber[0]}`} className="text-md text-white/70 text-shadow-sm text-shadow-black md:text-lg hover:ml-2 duration-300" dir="ltr"> {phonenumber[0]}  </a>
                 </div>
 
                 <div className="w-full h-1/2 flex items-center justify-start">
-                    <a href={`tel:${phonenumber[1]}`} className="text-md text-white/70 text-shadow-sm text-shadow-black" dir="ltr"> {phonenumber[1]}  </a>
+                    <a href={`tel:${phonenumber[1]}`} className="text-md text-white/70 text-shadow-sm text-shadow-black md:text-lg hover:ml-2 duration-300" dir="ltr"> {phonenumber[1]}  </a>
                 </div>
 
             </div>
@@ -22,7 +22,9 @@ export default function PhoneNumber() {
             {/* phonenumber logo */}
             <div className="w-1/4 h-full flex items-center justify-center">
 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 text-green-700/70">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+                    className="size-10 text-green-700/70 md:size-12 hover:-rotate-6 duration-300">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                 </svg>
 

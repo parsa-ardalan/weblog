@@ -28,7 +28,7 @@ export default function RecentProjects() {
                 clickable: true,
             }}
             modules={[Autoplay]}
-            className="mySwiper w-full h-1/2 mt-6"
+            className="mySwiper w-full h-1/2 mt-6 md:h-2/3"
         >
 
             {
@@ -37,10 +37,10 @@ export default function RecentProjects() {
 
                     <SwiperSlide className='w-full h-full'>
 
-                        <div className='text-center w-full h-full bg-white/20 backdrop-blur-xs rounded-xl' dir='ltr'>
+                        <div className='text-center w-full h-full bg-white/20 backdrop-blur-xs rounded-xl md:w-1/2' dir='ltr'>
 
-                            <div className="h-1/2 w-full flex items-center justify-end px-5">
-                                <h1 className='text-white/70 text-shadow-sm text-shadow-black text-xl'> {project.name} </h1>
+                            <div className="h-1/2 w-full flex items-center justify-end px-5 md:px-10">
+                                <h1 className='text-white/70 text-shadow-sm text-shadow-black text-xl md:text-2xl'> {project.name} </h1>
                             </div>
 
                             <hr className='text-white/50 w-5/6 h-1 mx-auto' /> 
@@ -49,7 +49,7 @@ export default function RecentProjects() {
 
                                 <div className="h-full w-1/2 flex items-center justify-end pl-5" dir='rtl'>
 
-                                    <Link className='text-md text-green-700 text-shadow-sm text-shadow-black/40'
+                                    <Link className='text-md text-green-700 text-shadow-sm text-shadow-black/40 md:text-lg'
 
                                         href={{
                                             pathname: `/project/${project.name}`,
@@ -66,10 +66,10 @@ export default function RecentProjects() {
 
                                 {/* photos */}
                                 <div className="w-1/2 h-full flex items-center justify-center">
-                                    <Image src={project.photo1} width={25} height={50} alt='photo' className='border border-white/30 rounded-sm -ml-2' />
-                                    <Image src={project.photo2} width={25} height={50} alt='photo' className='border border-white/30 rounded-sm -ml-2' />
-                                    <Image src={project.photo3} width={25} height={50} alt='photo' className='border border-white/30 rounded-sm -ml-2' />
-                                    <Image src={project.photo4} width={25} height={50} alt='photo' className='border border-white/30 rounded-sm -ml-2' />
+                                    <Image src={project.photo1} width={25} height={50} alt='photo' className='border border-white/30 rounded-sm -ml-2 md:w-[35px] md:ml-1' />
+                                    <Image src={project.photo2} width={25} height={50} alt='photo' className='border border-white/30 rounded-sm -ml-2 md:w-[35px] md:ml-1' />
+                                    <Image src={project.photo3} width={25} height={50} alt='photo' className='border border-white/30 rounded-sm -ml-2 md:w-[35px] md:ml-1' />
+                                    <Image src={project.photo4} width={25} height={50} alt='photo' className='border border-white/30 rounded-sm -ml-2 md:w-[35px] md:ml-1' />
                                 </div>
 
                             </div>
