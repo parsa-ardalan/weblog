@@ -57,7 +57,7 @@ export default function Project() {
             <Header />
 
             {/* name and info */}
-            <div className="rounded-t-xl backdrop-blur-xs h-auto py-3 px-3 bg-white/20 mt-10 md:mt-5">
+            <div className="rounded-t-xl backdrop-blur-xs h-auto py-3 px-3 bg-white/20 mt-14 md:mt-5">
 
                 <h1 className="text-xl text-white/70 text-shadow-sm text-shadow-black md:text-2xl"> {project.name} </h1>
 
