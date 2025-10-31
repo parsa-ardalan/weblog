@@ -1,41 +1,44 @@
+"use client"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+    const pathname = usePathname();
+
+    const linkClass = (path) =>
+        `size-8 md:size-10 ${pathname === path ? "text-green-700/70" : "text-white/70"}`;
 
     return (
-
         <div className="flex w-full h-auto pr-5 md:h-20 md:bg-white/20 md:rounded-xl md:w-1/3 md:backdrop-blur-xs">
 
             {/* home */}
             <div className="w-1/2 h-full flex items-center justify-start md:w-1/4">
-
-                <Link href={"/"}>
+                <Link href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
-                        className="size-8 text-green-700/70 md:size-10">
+                        className={linkClass("/")}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                     </svg>
                 </Link>
-
             </div>
 
             {/* icons */}
             <div className="w-1/2 h-full flex items-center justify-center md:justify-end">
 
-                {/* templates and projects icon */}
-                <Link href={"/templates"}>
+                {/* templates */}
+                <Link href="/templates">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
-                        className="size-8 text-white/70 md:size-10">
+                        className={linkClass("/templates")}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
                     </svg>
                 </Link>
 
-                {/* contact icon */}
-                <Link href={"/contact"}>
+                {/* contact */}
+                <Link href="/contact">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
-                        className="size-8 text-white/70 mr-10 md:size-10 md:mr-20">
+                        className={`${linkClass("/contact")} mr-10 md:mr-20`}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                     </svg>
                 </Link>
