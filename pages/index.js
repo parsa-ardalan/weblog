@@ -30,15 +30,7 @@ export default function Home() {
 
       <Header />
 
-      <div className="flex w-full h-1/2 mt-10 md:h-3/4">
-
-        <Profile />
-        <Skills />
-        {isLarge && <Tools />}
-
-      </div>
-
-      {!isLarge && <Tools />}
+      <Profile />
 
     </div>
   );
