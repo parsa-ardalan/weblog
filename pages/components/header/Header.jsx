@@ -9,7 +9,7 @@ export default function Header() {
         `size-8 md:size-10 ${pathname === path ? "text-green-700/70" : "text-white/70"}`;
 
     return (
-        <div className="flex w-full h-auto pr-5 md:h-20 md:bg-white/20 md:rounded-xl md:w-1/3 md:backdrop-blur-xs">
+        <div className="flex w-full h-auto pr-5 md:h-20 md:bg-white/10 md:rounded-xl md:w-1/3 md:backdrop-blur-xs">
 
             {/* home */}
             <div className="w-1/2 h-full flex items-center justify-start md:w-1/4">

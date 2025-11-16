@@ -75,7 +75,7 @@ export default function Projects() {
                     projects.map((project) => (
 
                         <SwiperSlide
-                            className='bg-white/20 rounded-t-xl'
+                            className='bg-white/10 rounded-t-xl'
                             style={{
                                 backgroundImage: `url(${project.photo1})`,
                                 backgroundSize: "cover",

@@ -57,7 +57,7 @@ export default function Project() {
             <Header />
 
             {/* name and info */}
-            <div className="rounded-t-xl backdrop-blur-xs h-auto py-3 px-3 bg-white/20 mt-14 md:mt-5">
+            <div className="rounded-t-xl backdrop-blur-xs h-auto py-3 px-3 bg-white/10 mt-14 md:mt-5">
 
                 <h1 className="text-xl text-white/70 text-shadow-sm text-shadow-black md:text-2xl"> {project.name} </h1>
 
@@ -72,12 +72,12 @@ export default function Project() {
             <div className="w-full h-1/4 mt-1 backdrop-blur-xs flex md:gap-1 md:h-2/4">
 
                 {/* photos of the project */}
-                <div className="h-full w-full grid grid-cols-4 gap-3 px-3 py-3 bg-white/20 backdrop-blur-xs md:h-full md:w-2/4">
+                <div className="h-full w-full grid grid-cols-4 gap-3 px-3 py-3 bg-white/10 backdrop-blur-xs md:h-full md:w-2/4">
 
                     {
                         projectPhotos.map((photo) => (
 
-                            <div className="project-image col-span-1 bg-white/20 shadow-md shadow-black rounded-sm"
+                            <div className="project-image col-span-1 bg-white/10 shadow-md shadow-black rounded-sm"
                                 key={photo} style={{ backgroundImage: `url(${photo})` }}>
 
                             </div>
@@ -87,7 +87,7 @@ export default function Project() {
                 </div>
 
                 {/* info: github link in md screen and... */}
-                <div className="hidden h-full w-full px-3 py-3 bg-white/20 backdrop-blur-xs md:block md:h-full md:w-2/4">
+                <div className="hidden h-full w-full px-3 py-3 bg-white/10 backdrop-blur-xs md:block md:h-full md:w-2/4">
 
                 </div>
 
@@ -96,7 +96,7 @@ export default function Project() {
 
             {/* // bottom div: github */}
 
-            <div className="flex w-full h-1/10 bg-white/20 mt-1 rounded-b-xl px-5 backdrop-blur-xs" dir="ltr">
+            <div className="flex w-full h-1/10 bg-white/10 mt-1 rounded-b-xl px-5 backdrop-blur-xs" dir="ltr">
 
 
                 {/* github icon and link */}

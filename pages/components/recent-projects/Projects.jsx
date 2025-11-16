@@ -37,7 +37,7 @@ export default function RecentProjects() {
 
                     <SwiperSlide className='w-full h-full'>
 
-                        <div className='text-center w-full h-full bg-white/20 backdrop-blur-xs rounded-xl md:w-1/2' dir='ltr'>
+                        <div className='text-center w-full h-full bg-white/10 backdrop-blur-xs rounded-xl md:w-1/2' dir='ltr'>
 
                             <div className="h-1/2 w-full flex items-center justify-end px-5 md:px-10">
                                 <h1 className='text-white/70 text-shadow-sm text-shadow-black text-xl md:text-2xl'> {project.name} </h1>

@@ -4,7 +4,7 @@ export default function Skill(props) {
 
     return (
 
-        <div className="col-span-3 bg-white/20 rounded-xl backdrop-blur-xs md:py-2">
+        <div className="col-span-3 bg-white/10 rounded-xl backdrop-blur-xs md:py-2">
 
           
             <div className="h-1/2 w-full pt-4">

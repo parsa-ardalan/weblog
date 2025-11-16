@@ -20,15 +20,73 @@
 }
 
 body {
-
-  background-image: url("../public/images/backgrounds/background3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-origin: content-box;
+  margin: 0;
+  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  background: black;
+
+  background-image:
+    radial-gradient(circle, rgba(8, 142, 60, 0.1) 30%, transparent 70%),
+    radial-gradient(circle, rgba(8, 142, 59, 0.1) 30%, transparent 80%);
+  background-repeat: no-repeat;
+  background-size: 800px 800px, 600px 600px;
+  background-position: 0% 0%, 50% 50%;
+
+  animation: greenShadow 10s ease-in-out infinite;
 }
+
+@keyframes greenShadow {
+  0% {
+    background-position: 5% 20%, 90% 30%, 50% 10%;
+  }
+
+  25% {
+    background-position: 15% 40%, 80% 80%, 30% 50%;
+  }
+
+  50% {
+    background-position: 25% 70%, 95% 40%, 70% 90%;
+  }
+
+  75% {
+    background-position: 10% 90%, 85% 60%, 20% 80%;
+  }
+
+  100% {
+    background-position: 5% 20%, 90% 30%, 50% 10%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    background-size: 500px 500px, 300px 300px, 250px 250px;
+  }
+
+  @keyframes greenShadow {
+    0% {
+      background-position: 10% 0%, 85% 10%, 50% 0%;
+    }
+
+    25% {
+      background-position: 25% 70%, 75% 100%, 30% 80%;
+    }
+
+    50% {
+      background-position: 40% 100%, 95% 80%, 70% 100%;
+    }
+
+    75% {
+      background-position: 15% 90%, 60% 100%, 20% 95%;
+    }
+
+    100% {
+      background-position: 10% 0%, 85% 10%, 50% 0%;
+    }
+  }
+
+}
+
 
 
 /* profile picture styles */
@@ -39,6 +97,7 @@ body {
 }
 
 @keyframes morph {
+
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
