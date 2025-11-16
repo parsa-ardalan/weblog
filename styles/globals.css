@@ -60,7 +60,7 @@ body {
 @media (max-width: 768px) {
 
   body {
-    background-size: 500px 500px, 300px 300px, 250px 250px;
+    background-size: 700px 700px, 500px 500px, 250px 250px;
   }
 
   @keyframes greenShadow {
