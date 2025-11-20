@@ -18,10 +18,10 @@ export default function Profile() {
 
 
             {/* name , lastname */}
-            <div className="col-span-3 pt-5 pr-7 ">
+            <div className="col-span-3 pt-3 pr-7 ">
 
-                <h1 className="text-white/70 w-full mt-1 text-2xl"> {data.personalInfo.name} </h1>
-                <h1 className="text-white/70 w-full mt-1 text-sm"> {data.personalInfo.jobTitle} </h1>
+                <h1 className="text-white/70 w-full text-2xl"> {data.personalInfo.name} </h1>
+                <h1 className="text-white/70 w-full mt-2 text-sm"> {data.personalInfo.jobTitle} </h1>
 
             </div>
 
