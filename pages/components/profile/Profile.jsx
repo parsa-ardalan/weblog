@@ -6,7 +6,7 @@ export default function Profile() {
 
     return (
 
-        <div className="grid grid-cols-5 w-full h-1/6 mt-20">
+        <div className="grid grid-cols-5 w-full h-1/6" id="profile-div">
 
 
             {/* image div */}
