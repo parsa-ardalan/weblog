@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/header/Header";
 import Profile from "./components/profile/Profile";
 import Skills from "./components/skills/Skills";
-import Tools from "./components/tools/Tools";
+import Resume from "./components/resume/Resume";
 
 
 export default function Home() {
