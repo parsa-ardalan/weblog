@@ -1,0 +1,38 @@
+[
+    {
+        "name": "فست فود آنلاین",
+        "user": "project-0",
+        "id": 0,
+        "github": "https://github.com/parsa-ardalan/fastFood-website.git",
+        "info": "پروژه فست فود آنلاین با امکان مشاهده محصولات، و سفارش. امکان افزودن به سبد خرید، و دسترسی به صفحات: ارتباط با ما، تماس با ما و منو.",
+        "photo": "/images/projects/fastFood/main.jpg",
+        "photo1": "/images/projects/fastFood/home.jpg",
+        "photo2": "/images/projects/fastFood/menu.jpg",
+        "photo3": "/images/projects/fastFood/pizza.jpg",
+        "photo4": "/images/projects/fastFood/burgers.jpg"
+    },
+    {
+        "name": "سبد خرید",
+        "user": "project-1",
+        "id": 1,
+        "github": "https://github.com/parsa-ardalan/cart.git",
+        "info": "مینی پروژه فروشگاهی کفش، با امکان سبد خرید. برنامه نویسی شده با استفاده از Redux ",
+        "photo": "/images/projects/cart/main.jpg",
+        "photo1": "/images/projects/cart/home.jpg",
+        "photo2": "/images/projects/cart/items.jpg",
+        "photo3": "/images/projects/cart/item.jpg",
+        "photo4": "/images/projects/cart/cart.jpg"
+    },
+    {
+        "name": "منوی آنلاین کافه",
+        "user": "project-2",
+        "id": 2,
+        "github": "https://github.com/parsa-ardalan/cafe-menu-v1.git",
+        "photo": "/images/projects/menu-v1/main.jpg",
+        "info": "منوی آنلاین کافه با اسکن کد QR قابل دسترسی راحت و آسان. بروز ترین طراحی UI و کاربر پسند (UX)",
+        "photo1": "/images/projects/menu-v1/home.jpg",
+        "photo2": "/images/projects/menu-v1/cakes.jpg",
+        "photo3": "/images/projects/menu-v1/juice.jpg",
+        "photo4": "/images/projects/menu-v1/coffee.jpg"
+    }
+]

@@ -186,3 +186,34 @@ span {
   }
 
 }
+
+
+/* project animation */
+.project {
+
+  opacity: 0;
+  animation: come-in 1.4s forwards;
+}
+
+#project-0 { 
+  animation-delay: 0.5s;
+}
+
+#project-1 {
+  animation-delay: 0.6s;
+}
+
+#project-2 { 
+  animation-delay: 0.9s;
+}
+
+@keyframes come-in { 
+
+  0% { 
+    opacity: 0;
+  }
+
+  100% { 
+    opacity: 1;
+  }
+}
