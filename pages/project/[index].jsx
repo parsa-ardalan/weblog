@@ -59,7 +59,7 @@ export default function Project() {
 
             <Header />
 
-            <div className="mt-16 w-full h-4/5 py-10 px-5">
+            <div className="mt-16 w-full h-4/5 pt-10 pb-3 px-5">
 
                 {/* name and info */}
                 <div className="w-full h-2/6">

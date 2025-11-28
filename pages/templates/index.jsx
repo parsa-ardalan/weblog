@@ -12,7 +12,6 @@ export default function templates() {
 
             <Header />
 
-
             {/* container div */}
             <div className="h-full flex items-center justify-center">
 
